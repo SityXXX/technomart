@@ -307,26 +307,26 @@
                 </article>
 
                 <!-- Карта -->
-                <figure class="full-map invisible">
+                <figure class="modal full-map">
                     <img src="http://placehold.it/1169x827" width="1169" height="827" alt="Карта проезда полная">
-                    <input type="image" src="http://placehold.it/10x10">
+                    <input type="image" src="http://placehold.it/10x10" class="close">
                 </figure>
 
                 <!-- Форма обратной связи -->
-                <div class="feedback invisible">
+                <div class="modal feedback">
                     <form action="/" method="post" enctype="application/x-www-form-urlencoded">
-                        <header class="form-header">
-                        </header>
+                        <div class="form-header">
+                        </div>
                         <div class="form-content">
+                            <input type="image" src="http://placehold.it/10x10" class="close">
                             <div class="row">
-                                <div class="input-col">
-                                    <label for="name">Ваше имя:</label>
-                                    <input type="text" name="name" id="name">
-                                </div>
-                                <div class="input-col">
-                                    <label for="email">Ваш e-mail:</label>
-                                    <input type="email" name="email" id="email">
-                                </div>
+
+                                <label for="name">Ваше имя:</label>
+                                <input type="text" name="name" id="name">
+
+                                <label for="email">Ваш e-mail:</label>
+                                <input type="email" name="email" id="email">
+
                             </div>
                             <div class="row">
 
@@ -335,16 +335,12 @@
 
                             </div>
                         </div>
-                        <footer class="form-footer">
+                        <div class="form-footer">
                             <div class="row">
-                                <div class="input-col">
-                                    <input type="submit" name="sub" value="Отправить">
-                                </div>
-                                <div class="input-col">
-                                    <input type="button" name="cancel" value="Отмена" class="cancel">
-                                </div>
+                                <input type="submit" name="sub" value="Отправить">
+                                <a class="btn btn-cancel" href="#">Отмена</a>
                             </div>
-                        </footer>
+                        </div>
                     </form>
                 </div>
                 <!-- Конец формы -->
