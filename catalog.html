@@ -79,9 +79,9 @@
             </nav>
 
             <div class="category">
-                <header class="block-header page-header">
+                <div class="block-header page-header">
                     <h1>Перфораторы</h1>
-                </header>
+                </div>
                 <div class="category-content">
                     <aside class="left-sidebar">
                         <div class="filter-products">
@@ -98,34 +98,27 @@
                                 <legend>Производители:</legend>
                                 <ul>
                                     <li>
-                                        <label>
-                                            <input type="checkbox" value="Bosch" name="manufacture[]" checked>Bosch</label>
+                                        <input type="checkbox" id="bosch" value="Bosch" name="manufacture[]" checked><label for="bosch">Bosch</label>
                                     </li>
                                     <li>
-                                        <label>
-                                            <input type="checkbox" value="Интерскол" name="manufacture[]">Интерскол</label>
+                                        <input type="checkbox" id="interskol" value="Интерскол" name="manufacture[]"><label for="interskol">Интерскол</label>
                                     </li>
                                     <li>
-                                        <label>
-                                            <input type="checkbox" value="Makita" name="manufacture[]" checked>Makita</label>
+                                        <input type="checkbox" id="makita" value="Makita" name="manufacture[]" checked><label for="makita">Makita</label>
                                     </li>
                                     <li>
-                                        <label>
-                                            <input type="checkbox" value="Devalt" name="manufacture[]">Devalt</label>
+                                        <input type="checkbox" id="dewalt" value="Devalt" name="manufacture[]"><label for="devalt">Devalt</label>
                                     </li>
                                     <li>
-                                        <label>
-                                            <input type="checkbox" value="Hitachi" name="manufacture[]">Hitachi</label>
+                                        <input type="checkbox" id="hitachi" value="Hitachi" name="manufacture[]"><label for="hitachi">Hitachi</label>
                                     </li>
                                 </ul>
                             </fieldset>
                             <fieldset>
                                 <legend></legend>
                                 <ul>
-                                    <li>
-                                        <input type="radio" name="power" value="Аккумуляторные">Аккумуляторные</li>
-                                    <li>
-                                        <input type="radio" name="power" value="Стевые">Стевые</li>
+                                    <li><input type="radio" id="battery" name="power" value="Аккумуляторные"><label for="battery">Аккумуляторные</label></li>
+                                    <li><input type="radio" id="elnetwork" name="power" value="Стевые"><label for="elnetwork">Стевые</label></li>
                                 </ul>
                             </fieldset>
                             <input type="submit" name="sub" value="Показать">
