@@ -1,0 +1,21 @@
+body {
+    font: normal 13px/24px "PT Sans";
+    color: #000;
+}
+h1, h2 {
+    text-transform: uppercase;
+    color: #32425c;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 36px;
+}
+.product-block h1 {
+	text-transform: none;
+    font-size: 18px;
+}
+.custom h1 {
+    color: #000;
+}
