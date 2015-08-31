@@ -7,16 +7,18 @@
 </head>
 
 <body>
+
     <header class="page-header">
         <div class="header-top-row">
             <div class="conatiner">
                 <ul>
+                    <li><div class="logo"><a href="/">Техномарт</a></div></li>
                     <li>
-                        <div class="logo"><a href="/">Техномарт</a></div></li>
-                    <li>
-                        <input class="main-search" type="search" name="search" placeholder="Поиск:">
+                        <form action="/" method="get" enctype="application/x-www-form-urlencoded">
+                            <input class="main-search" type="search" name="search" placeholder="Поиск:">
+                        </form>
                     </li>
-                    <li><a herf="#" class="btn btn-bookmark">Закладки:<span>0</span></a></li>
+                    <li><a href="#" class="btn btn-bookmark">Закладки:<span>0</span></a></li>
                     <li><a href="#" class="btn btn-cart">Корзина:<span>0</span></a></li>
                     <li><a href="#" class="btn btn-order">Оформить заказ</a></li>
                 </ul>
@@ -25,11 +27,11 @@
         <div class="header-bot-row">
             <div class="container">
                 <div class="row">
-                    <div class="slogan-block">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+                    <p class="slogan-block">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
                     <div class="address-block">
-                        <div class="phone">+7(812) 555-05-55</div>
-                        <span class="address">г.Санкт-Петербург, ул.Конюшенная, д.19/8</span>
+                        <p class="phone">+7(812) 555-05-55</p>
+                        <p class="address">г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
                     </div>
 
                     <div class="user-block">
@@ -52,6 +54,7 @@
             </div>
         </div>
     </header>
+
     <div class="page-content">
         <div class="container">
 
@@ -116,10 +119,10 @@
             </div>
 
             <section class="feature">
-                <header class="block-header feature-header">
+                <div class="block-header feature-header">
                     <h1>Популярные товары</h1>
                     <a class="btn">Все популярные товары</a>
-                </header>
+                </div>
                 <div class="feature-content">
                     <div class="row product-row">
 
@@ -128,7 +131,9 @@
                                 <a href="#" class="btn btn-buy">Купить</a>
                                 <a href="#" class="btn btn-add-bookmark">В закладки</a>
                             </div>
-                            <img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+                            <div class="img-wrap">
+                                <img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+                            </div>
                             <h1>Перфоратор BOSCH BFG 9000</h1>
                             <span class="product-old-price">32500 р.</span>
                             <span class="product-price">25500 р.</span>
@@ -139,7 +144,9 @@
                                 <a href="#" class="btn btn-buy">Купить</a>
                                 <a href="#" class="btn btn-add-bookmark">В закладки</a>
                             </div>
-                            <img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                            <div class="img-wrap">
+                                <img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                            </div>
                             <h1>Перфоратор BOSCH BFG 3000</h1>
                             <span class="product-old-price">22500 р.</span>
                             <span class="product-price">12500 р.</span>
@@ -150,7 +157,9 @@
                                 <a href="#" class="btn btn-buy">Купить</a>
                                 <a href="#" class="btn btn-add-bookmark">В закладки</a>
                             </div>
-                            <img src="img/bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                            <div class="img-wrap">
+                                <img src="img/bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                            </div>
                             <h1>Перфоратор BOSCH BFG 6000</h1>
                             <span class="product-old-price">30500 р.</span>
                             <span class="product-price">25500 р.</span>
@@ -161,7 +170,9 @@
                                 <a href="#" class="btn btn-buy">Купить</a>
                                 <a href="#" class="btn btn-add-bookmark">В закладки</a>
                             </div>
-                            <img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                            <div class="img-wrap">
+                                <img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                            </div>
                             <h1>Перфоратор BOSCH BFG 2000</h1>
                             <span class="product-price">12500 р.</span>
                         </article>
@@ -171,35 +182,43 @@
             </section>
 
             <section class="feature">
-                <header class="block-header feature-header">
+                <div class="block-header feature-header">
                     <h1>Популярные производители</h1>
                     <a class="btn">Все производители</a>
-                </header>
+                </div>
                 <div class="feature-content">
                     <div class="row">
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <img src="img/bosch.jpg" width="126" height="37" alt="Bosh">
+                                <div class="img-wrap">
+                                    <img src="img/bosch.jpg" width="126" height="37" alt="Bosh">
+                                </div>
                             </a>
                         </div>
 
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <img src="img/makita.jpg" width="123" height="40" alt="Makita">
+                                <div class="img-wrap">
+                                    <img src="img/makita.jpg" width="123" height="40" alt="Makita">
+                                </div>
                             </a>
                         </div>
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <img src="img/dewalt.jpg" width="146" height="44" alt="DeWalt">
+                                <div class="img-wrap">
+                                    <img src="img/dewalt.jpg" width="146" height="44" alt="DeWalt">
+                                </div>
                             </a>
                         </div>
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <img src="img/interskol.jpg" width="200" height="88" alt="Интерскол">
+                                <div class="img-wrap">
+                                    <img src="img/interskol.jpg" width="200" height="88" alt="Интерскол">
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -207,25 +226,33 @@
                     <div class="row">
                         <div class="block manufacture-block">
                             <a href="#">
-                                <img src="img/hitachi.jpg" width="169" height="31" alt="Hitachi">
+                                <div class="img-wrap">
+                                    <img src="img/hitachi.jpg" width="169" height="31" alt="Hitachi">
+                                </div>
                             </a>
                         </div>
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <img src="img/lg.jpg" width="121" height="73" alt="LG">
+                                <div class="img-wrap">
+                                    <img src="img/lg.jpg" width="121" height="73" alt="LG">
+                                </div>
                             </a>
                         </div>
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <img src="img/aeg.jpg" width="151" height="96" alt="AEG">
+                                <div class="img-wrap">
+                                    <img src="img/aeg.jpg" width="151" height="96" alt="AEG">
+                                </div>
                             </a>
                         </div>
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <img src="img/metabo.jpg" width="204" height="69" alt="Metabo">
+                                <div class="img-wrap">
+                                    <img src="img/metabo.jpg" width="204" height="69" alt="Metabo">
+                                </div>
                             </a>
                         </div>
 
@@ -242,10 +269,11 @@
                 </p>
 
                 <div class="content">
+                    <input type="radio" name="piano" checked>
                     <ul class="piano-slider">
                         <li>
                             <label>
-                                <input type="radio" name="piano" checked>Доставка</label>
+                                Доставка</label>
                         </li>
                         <li>
                             <label>
@@ -284,9 +312,9 @@
 
             </section>
 
-            <section class="custom about-contact">
+            <div class="custom about-contact">
 
-                <article class="about">
+                <section class="about">
                     <h1>Компания "Техномарт"</h1>
                     <p>
                         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -302,24 +330,24 @@
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
                     <a class="btn" href="#">Подробнее о компании</a>
-                </article>
+                </section>
 
-                <article class="contacts">
+                <section class="contacts">
                     <h1>Контакты</h1>
                     <p>
                         Вы можете забрать товар сами,
                         <br> заехав в наш офис:
                     </p>
                     <figure class="map">
-                        <img src="img/map-sm.jpg" alt="Карта проезда">
+                        <a href=""><img src="img/map-sm.jpg" alt="Карта проезда"></a>
                     </figure>
                     <a class="btn" href="#">Заблудились? Напишите нам!</a>
-                </article>
+                </section>
 
                 <!-- Карта -->
                 <figure class="modal full-map">
+                    <a href="#" class="close"></a>
                     <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=z0X923Gw-82w.kQr1yHDZFOTw" width="960" height="446"></iframe>
-                    <input type="image" src="http://placehold.it/10x10" class="close">
                 </figure>
 
                 <!-- Форма обратной связи -->
@@ -328,7 +356,7 @@
                         <div class="form-header">
                         </div>
                         <div class="form-content">
-                            <input type="image" src="http://placehold.it/10x10" class="close">
+                            <a href="#" class="close"></a>
                             <div class="row">
 
                                 <label for="name">Ваше имя:</label>
@@ -355,7 +383,7 @@
                 </div>
                 <!-- Конец формы -->
 
-            </section>
+            </div>
 
             <footer class="page-footer">
                 <div class="footer-top-row">
@@ -406,7 +434,7 @@
                         <div class="contact-us">
                             <div class="row">
                                 <div class="mail-us">Обратная звязь<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
-                                <div class="made-by">Разработано -<a href="\\htmlacademy.ru">htmlacademy.ru</a></div>
+                                <div class="made-by">Разработано -<a href="//htmlacademy.ru">htmlacademy.ru</a></div>
                             </div>
                         </div>
                     </div>
