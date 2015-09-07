@@ -238,9 +238,33 @@ form.search {
     color: #ee3643;
     line-height: 23px;
     font-style: italic;
-    width: 300px;
+    width: 267px;
     padding-left: 53px;
 }
 .slogan-block, .address-block, .user-block {
     float: left;
+}
+.phone {
+    font-size: 21px;
+    color: #e9292a;
+    border: 3px solid #fff;
+    padding-left: 71px;
+    width: 193px;
+    height: 39px;
+    line-height: 39px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.phone:before {
+    color: #b7bfc8;
+    position: absolute;
+    left: 9px;
+    top: 11px;
+}
+.address {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    color: #32425c;
+    line-height: 14px;
 }
