@@ -3,20 +3,23 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/symbols-technomart.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Техномарт</title>
 </head>
 
 <body>
 
     <div class="modal product-in-cart">
-        <div class="form-header">
+        <div class="modal-header">
         </div>
-        <div class="form-content">
+        <div class="modal-content">
             <a href="#" class="close"></a>
-            <div class="product-added">Товар добавлен в корзину</div>
+            <div class="h1 product-added">Товар добавлен в корзину</div>
         </div>
-        <div class="form-footer">
-            <div class="row">
+        <div class="modal-footer">
+            <div class="button-holder">
                 <a class="btn" href="#">Оформить заказ</a>
                 <a class="btn btn-cancel" href="#">Продолжить покупки</a>
             </div>
@@ -25,24 +28,25 @@
 
     <header class="page-header">
         <div class="header-top-row">
-            <div class="conatiner">
-                <ul>
+            <div class="container">
+                <ul class="top-panel">
                     <li><div class="logo"><a href="/">Техномарт</a></div></li>
                     <li>
-                        <form action="/" method="get" enctype="application/x-www-form-urlencoded">
-                            <input class="main-search" type="search" name="search" placeholder="Поиск:">
+                        <form class="search" action="/" method="get" enctype="application/x-www-form-urlencoded">
+                            <input id="search" class="main-search" type="search" name="search" placeholder="Поиск:">
+                            <label for="search" class="icon-search"></label>
                         </form>
                     </li>
-                    <li><a href="#" class="btn btn-bookmark">Закладки:<span>0</span></a></li>
-                    <li><a href="#" class="btn btn-cart">Корзина:<span>0</span></a></li>
-                    <li><a href="#" class="btn btn-order">Оформить заказ</a></li>
+                    <li><a href="#" class="panel-btn icon-bookmark">Закладки: <span>0</span></a></li>
+                    <li><a href="#" class="panel-btn icon-basket">Корзина: <span>0</span></a></li>
+                    <li><a href="#" class="panel-btn order-btn">Оформить заказ</a></li>
                 </ul>
             </div>
         </div>
         <div class="header-bot-row">
             <div class="container">
                 <div class="row">
-                    <p class="slogan-block">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+                    <p class="slogan-block">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
 
                     <div class="address-block">
                         <p class="phone">+7(812) 555-05-55</p>
@@ -53,8 +57,8 @@
                         <a href="#" class="btn user-btn btn-enter">Войти</a>
                         <a href="#" class="btn user-btn">Регистрация</a>
                     </div>
-
-                    <nav class="main-menu">
+                </div>
+                <nav class="main-menu">
                         <ul>
                             <li><a href="/">Главная</a></li>
                             <li><a href="#">Компания</a></li>
@@ -65,7 +69,6 @@
                             <li><a href="#">Контакти</a></li>
                         </ul>
                     </nav>
-                </div>
             </div>
         </div>
     </header>

@@ -1,12 +1,18 @@
+/* General rules */
+html, body {
+    padding: 0;
+    margin: 0;
+}
 body {
     font: normal 13px/24px "PT Sans";
     color: #000;
+    min-width: 960px;
 }
 h1, h2 {
     text-transform: uppercase;
     color: #32425c;
 }
-h1 {
+h1, div.h1 {
     font-size: 30px;
 }
 h2 {
@@ -18,4 +24,223 @@ h2 {
 }
 .custom h1 {
     color: #000;
+}
+h1, h2, h3, div.h1, div.h2, div.h3 {
+    font-family: Cuprum;
+}
+/* Greed system */
+.container {
+	width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 -10px;
+}
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 620px;
+    height: 282px;
+    margin-top: -141px;
+    margin-left: -310px;
+    -o-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+    -moz-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+    -webkit-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+    box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+    background: #fff;
+}
+.modal-header {
+	min-height: 7px;
+    background: #ee3643;
+}
+.modal-content {
+    padding-top: 47px;
+    padding-bottom: 50px;
+	position: relative;
+}
+.modal-footer {
+	background: #f1f1f1;
+    padding-bottom: 37px;
+    padding-top: 37px;
+}
+.modal-content, .modal-footer {
+	padding-left: 80px;
+    padding-right: 80px;
+}
+.product-added {
+    height: 66px;
+    line-height: 66px;
+	padding-left: 99px;
+    background: url('img/product-in-cart.png') 0 50% no-repeat;
+}
+a.close {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    width: 22px;
+    height: 22px;
+    background: url('img/cross.png') 50% 50% no-repeat;
+}
+/* Buttons */
+.button-holder {
+    font-size: 0;
+}
+.button-holder .btn{
+	margin-right: 20px;
+}
+.button-holder .btn:last-child {
+	margin-right: 0;
+}
+.btn {
+    width: 210px;
+    display: inline-block;
+    line-height: 18px;
+    padding: 10px 5px;
+    background: #ee3643;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Cuprum;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+.btn-cancel {
+    background-color: #fff;
+    color: #000;
+}
+/* Header */
+.page-header {
+    background: #f1f5f7;
+    font-family: Cuprum;
+}
+.header-top-row {
+    background: #293449;
+    min-height: 42px;
+}
+ul.top-panel {
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 17px;
+    color: #fff;
+}
+ul.top-panel li {
+    float: left;
+}
+/* Logo */
+.logo a {
+    line-height: 42px;
+    height: 42px;
+    text-align: center;
+    display: block;
+    background: #ee3643;
+    width: 210px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 5px;
+    box-shadow: 0 5px 0 0 #b52a34;
+    font-size: 24px;
+    color: #fff;
+}
+.logo a:hover {
+    background: #ca2c37;
+    box-shadow: 0 5px 0 0 #a3232d;
+}
+.logo a:active {
+    background: #ba2732;
+    box-shadow: 0 5px 0 0 #8f1f27;
+}
+/* Search */
+form.search {
+    position: relative;
+}
+.main-search {
+    height: 42px;
+    width: 221px;
+    background: transparent;
+    padding: 0 0 0 49px;
+    border: none;
+    color: #fff;
+}
+.main-search:hover {
+	background: #212a3a;
+}
+.main-search:focus {
+    outline: none;
+    background: #fff;
+    color: #000;
+}
+.main-search::-webkit-input-placeholder {
+    color: #fff;
+}
+.main-search + label:before{
+	position: absolute;
+    left: 13px;
+    top: 12px;
+    opacity: .3;
+}
+.main-search:hover + label:before, .main-search:focus + label:before {
+    opacity: 1;
+}
+.main-search:focus + label:before {
+	color: #ee3643;
+}
+/* Panel buttons */
+.panel-btn {
+	height: 42px;
+    display: block;
+    color: #fff;
+    width: 150px;
+    text-decoration: none;
+    line-height: 42px;
+    text-align: center;
+
+}
+.panel-btn:before {
+	opacity: .3;
+    margin-right: 13px;
+}
+.panel-btn:hover {
+	background: #212a3a;
+}
+.panel-btn:hover:before {
+    opacity: 1;
+}
+.panel-btn:active {
+	background: #161d29;
+}
+.panel-btn:active:before {
+    opacity: .5;
+}
+.order-btn {
+    background: #63a63e;
+}
+.order-btn:hover {
+    background: #5fbb2d;
+}
+.order-btn:active {
+    background: #518534;
+    color: rgba(255,255,255,.51);
+}
+/* Bottom panel */
+.slogan-block {
+	font-size: 17px;
+    color: #ee3643;
+    line-height: 23px;
+    font-style: italic;
+    width: 300px;
+    padding-left: 53px;
+}
+.slogan-block, .address-block, .user-block {
+    float: left;
 }
