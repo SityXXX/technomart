@@ -21,7 +21,7 @@
 }
 */
 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+ [class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"]:after, [class*=" icon-"]:after {
   font-family: "symbols-technomart";
   font-style: normal;
   font-weight: normal;
@@ -30,7 +30,6 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
 
@@ -43,7 +42,6 @@
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -63,7 +61,7 @@
 .icon-left-big:before { content: '\2190'; } /* '←' */
 .icon-right-big:before { content: '\2192'; } /* '→' */
 .icon-login:before { content: '\2386'; } /* '⎆' */
-.icon-logout:before { content: '\241b'; } /* '␛' */
+.icon-logout:after { content: '\241b'; } /* '␛' */
 .icon-up-dir:before { content: '\25b2'; } /* '▲' */
 .icon-down-dir:before { content: '\25bc'; } /* '▼' */
 .icon-circle:before { content: '\25cb'; } /* '○' */

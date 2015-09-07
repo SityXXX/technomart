@@ -30,7 +30,7 @@ h1, h2, h3, div.h1, div.h2, div.h3 {
 }
 /* Greed system */
 .container {
-	width: 960px;
+	width: 940px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -123,9 +123,13 @@ a.close {
     background: #f1f5f7;
     font-family: Cuprum;
 }
+.page-header p{
+	margin: 0;
+}
 .header-top-row {
     background: #293449;
     min-height: 42px;
+    margin-bottom: 47px;
 }
 ul.top-panel {
 	margin: 0;
@@ -185,7 +189,7 @@ form.search {
 }
 .main-search + label:before{
 	position: absolute;
-    left: 13px;
+    left: 17px;
     top: 12px;
     opacity: .3;
 }
@@ -197,18 +201,21 @@ form.search {
 }
 /* Panel buttons */
 .panel-btn {
+    position: relative;
 	height: 42px;
     display: block;
     color: #fff;
-    width: 150px;
+    width: 106px;
+    padding-left: 44px;
     text-decoration: none;
     line-height: 42px;
-    text-align: center;
-
 }
 .panel-btn:before {
 	opacity: .3;
     margin-right: 13px;
+    position: absolute;
+    left: 17px;
+    top: 12px;
 }
 .panel-btn:hover {
 	background: #212a3a;
@@ -224,6 +231,9 @@ form.search {
 }
 .order-btn {
     background: #63a63e;
+    padding: 0 5px;
+    text-align: center;
+    width: 140px;
 }
 .order-btn:hover {
     background: #5fbb2d;
@@ -233,6 +243,13 @@ form.search {
     color: rgba(255,255,255,.51);
 }
 /* Bottom panel */
+.slogan-block, .address-block, .user-block {
+    float: left;
+}
+.address-block {
+	width: 270px;
+    margin-right: 50px;
+}
 .slogan-block {
 	font-size: 17px;
     color: #ee3643;
@@ -240,11 +257,9 @@ form.search {
     font-style: italic;
     width: 267px;
     padding-left: 53px;
+    padding-top: 4px;
 }
-.slogan-block, .address-block, .user-block {
-    float: left;
-}
-.phone {
+p.phone {
     font-size: 21px;
     color: #e9292a;
     border: 3px solid #fff;
@@ -263,8 +278,56 @@ form.search {
 }
 .address {
     text-align: center;
-    margin: 0;
     font-size: 14px;
     color: #32425c;
     line-height: 14px;
+}
+.user-block {
+	width: 300px;
+}
+.logout {
+    position: relative;
+    display: block;
+	height: 45px;
+    background: #fff;
+    font-size: 21px;
+    color: rgba(0,0,0,.3);
+    line-height: 45px;
+    text-decoration: none;
+    padding: 0 47px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 7px;
+}
+.logout:hover {
+    color: #000;
+}
+.logout:before, .logout:after {
+    font-size: 18px;
+    position: absolute;
+    top: 13px;
+}
+.logout:before {
+    left: 13px;
+}
+.logout:after {
+    right: 10px;
+}
+.logout:hover:before, .logout:hover:after {
+	color: #32425c;
+}
+.logout:active, .logout:active:before, .logout:active:after {
+	color: rgba(0,0,0,.3);
+}
+.user-menu {
+    font-size: 16px;
+    line-height: 18px;
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+}
+.user-menu li {
+	display: inline-block;
+    vertical-align: bottom;
 }
