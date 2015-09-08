@@ -8,6 +8,15 @@ body {
     color: #000;
     min-width: 960px;
 }
+a {
+    color: #32425c;
+}
+a:hover {
+    color: #ee3643;
+}
+a:active {
+    color: rgba(50,66,92,.3);
+}
 h1, h2 {
     text-transform: uppercase;
     color: #32425c;
@@ -129,7 +138,9 @@ a.close {
 .header-top-row {
     background: #293449;
     min-height: 42px;
-    margin-bottom: 47px;
+}
+.header-bot-row{
+    padding: 47px 0 60px;
 }
 ul.top-panel {
 	margin: 0;
@@ -219,12 +230,14 @@ form.search {
 }
 .panel-btn:hover {
 	background: #212a3a;
+    color: #fff;
 }
 .panel-btn:hover:before {
     opacity: 1;
 }
 .panel-btn:active {
 	background: #161d29;
+    color: rgba(255,255,255,.6);
 }
 .panel-btn:active:before {
     opacity: .5;
@@ -273,8 +286,8 @@ p.phone {
 .phone:before {
     color: #b7bfc8;
     position: absolute;
-    left: 9px;
-    top: 11px;
+    left: 12px;
+    top: 10px;
 }
 .address {
     text-align: center;
@@ -323,11 +336,51 @@ p.phone {
 .user-menu {
     font-size: 16px;
     line-height: 18px;
-    list-style-type: circle;
+    list-style-type: disc;
+    color: #32425c;
     margin: 0;
     padding: 0;
 }
 .user-menu li {
-	display: inline-block;
+    float: left;
     vertical-align: bottom;
+    padding: 0 2px;
+    margin: 0 14px;
+
+}
+.user-menu li:first-child {
+    list-style-type: none;
+}
+/* Main menu */
+.main-menu ul {
+    list-style-type: none;
+    font-size: 17px;
+    margin: 45px 0 0 0;
+    padding: 0;
+    background: #32425c;
+    border-bottom: 5px solid #293449;
+}
+.main-menu li {
+    float: left;
+}
+.main-menu a {
+    display: block;
+    line-height: 55px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    height: 55px;
+    padding: 0 33px;
+}
+.main-menu a:hover, .main-menu a:active {
+    background: #293449;
+}
+.main-menu a:active {
+    color: rgba(255,255,255,.5);
+}
+.main-menu li:first-child a {
+    padding: 0 35px;
+}
+.main-menu li:last-child a {
+    padding: 0 36px;
 }
