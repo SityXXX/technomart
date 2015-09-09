@@ -384,3 +384,21 @@ p.phone {
 .main-menu li:last-child a {
     padding: 0 36px;
 }
+/* Breadcrumbs */
+.breadcrumbs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs li {
+    float: left;
+}
+.breadcrumbs li:before, .breadcrumbs a:before {
+    color: #c1c6ce;
+}
+.breadcrumbs a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
