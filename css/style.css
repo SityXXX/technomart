@@ -36,6 +36,7 @@ h2 {
 }
 h1, h2, h3, div.h1, div.h2, div.h3 {
     font-family: Cuprum;
+    margin: 0;
 }
 /* Greed system */
 .container {
@@ -388,18 +389,49 @@ p.phone {
 /* Breadcrumbs */
 .breadcrumbs ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 25px;
     padding: 0;
 }
 .breadcrumbs li {
+    line-height: 1em;
     float: left;
 }
 .breadcrumbs li:before, .breadcrumbs a:before {
     color: #c1c6ce;
 }
 .breadcrumbs a {
+
     color: black;
     margin: 0 15px;
     text-decoration: none;
     text-transform: uppercase;
+}
+.breadcrumbs li:first-child a {
+    margin-left: 0;
+}
+/* Content */
+.block-header {
+	padding: 32px 24px 34px 30px;
+    margin-bottom: 20px;
+}
+.inner-page-header {
+    background: #f2f6f8;
+}
+custom-header {
+    background: #f7f3ec;
+}
+/* Left sidebar */
+.left-sidebar {
+	width: 220px;
+    float: left;
+}
+.products {
+    width: 700px;
+    float: right;
+}
+.filter-header {
+	line-height: 14px;
+    padding: 13px 12px 10px;
+    border-radius: 3px;
+    background: #f7f3ec;
 }
