@@ -19,7 +19,7 @@
             <div class="h1 product-added">Товар добавлен в корзину</div>
         </div>
         <div class="modal-footer">
-            <div class="button-holder">
+            <div class="inline-holder">
                 <a class="btn" href="#">Оформить заказ</a>
                 <a class="btn btn-cancel" href="#">Продолжить покупки</a>
             </div>
@@ -92,18 +92,27 @@
             <div class="row">
                 <aside class="left-sidebar">
                     <div class="filter-header">
-                        <span>Фильтр:</span>
+                        Фильтр:
                     </div>
                     <form action="/" method="get" enctype="application/x-www-form-urlencoded">
                         <fieldset>
                             <legend>Цена:</legend>
-                            <input type="range" name="range" min="0" max="30000" step="100">
-                            <input type="number" name="min_price" value="0"> -
-                            <input type="number" name="max_price" value="30000">
+                            <div class="range">
+                                <div class="bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="control control-left"></div>
+                                <div class="control control-right"></div>
+                            </div>
+                            <div class="row price-filter">
+                                <input type="text" name="minprice" class="price" value="0">
+                                <div class="price-line">—</div>
+                                <input type="text" name="maxprice" class="price" value="30000">
+                            </div>
                         </fieldset>
                         <fieldset>
                             <legend>Производители:</legend>
-                            <ul>
+                            <ul class="filter">
                                 <li>
                                     <input type="checkbox" id="bosch" value="Bosch" name="manufacture[]" checked><label for="bosch">Bosch</label>
                                 </li>
@@ -123,12 +132,12 @@
                         </fieldset>
                         <fieldset>
                             <legend>Питание:</legend>
-                            <ul>
-                                <li><input type="radio" id="battery" name="power" value="Аккумуляторные"><label for="battery">Аккумуляторные</label></li>
+                            <ul class="filter">
+                                <li><input disabled type="radio" id="battery" name="power" value="Аккумуляторные"><label for="battery">Аккумуляторные</label></li>
                                 <li><input type="radio" id="elnetwork" name="power" value="Стевые"><label for="elnetwork">Стевые</label></li>
                             </ul>
                         </fieldset>
-                        <input type="submit" name="sub" value="Показать">
+                        <input type="submit" name="sub" value="Показать" class="filter-submit">
                     </form>
                 </aside>
                 <div class="products">

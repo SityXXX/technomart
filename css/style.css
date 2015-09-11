@@ -4,7 +4,7 @@ html, body {
     margin: 0;
 }
 body {
-    font: normal 13px/24px "PT Sans";
+    font: normal 13px/24px "PT Sans" "Aerial" sans-serif;
     color: #000;
     min-width: 960px;
 }
@@ -100,7 +100,7 @@ a.close {
     background: url('img/cross.png') 50% 50% no-repeat;
 }
 /* Buttons */
-.button-holder {
+.inline-holder {
     font-size: 0;
 }
 .button-holder .btn{
@@ -431,7 +431,148 @@ custom-header {
 }
 .filter-header {
 	line-height: 14px;
-    padding: 13px 12px 10px;
+    padding: 13px 17px 10px;
     border-radius: 3px;
     background: #f7f3ec;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+fieldset {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 0 25px 0;
+    margin: 0 0 20px 0;
+}
+legend {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 21px;
+}
+.range {
+    padding: 0 20px;
+    height: 41px;
+    padding-top: 39px;
+    position: relative;
+    background: #f7f3ec;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-bottom: 9px;
+}
+.bar {
+    width: 100%;
+    height: 2px;
+    background: #d7dcde;
+    margin: 0 auto;
+}
+.progress {
+    width: 83%;
+    height: 2px;
+    background: #00ca74;
+}
+.control {
+    width: 4px;
+    height: 4px;
+	position: absolute;
+    background: #ababab;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.14);
+    margin-top: -10px;
+}
+.control-left {
+	left: 20px;
+    top: 50%;
+}
+.control-right {
+	right: 38px;
+    top: 50%;
+}
+.price-line {
+    float: left;
+    width: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 38px;
+}
+.price {
+    float: left;
+    display: block;
+    width: 85px;
+    padding: 0 5px;
+    height: 38px;
+    background: #f7f3ec;
+    font: normal 17px/38px "PT Sans";
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.price-filter .price:last-child {
+	float: right;
+}
+/* Manufacture filter */
+.filter {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.filter li {
+    margin-bottom: 17px;
+}
+.filter li:last-child {
+    margin-bottom: 0;
+}
+.filter input[type=checkbox], input[type=radio] {
+    display: none;
+}
+.filter label {
+	padding-left: 35px;
+    position: relative;
+    cursor: pointer;
+}
+.filter label:before {
+	color: #c1c1c1;
+    font-size: 28px;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    font-family: "symbols-technomart";
+}
+.filter label:hover:before {
+    color: #b5b5b5;
+}
+.filter input[type=checkbox][disabled] + label, .filter input[type=radio][disabled] + label {
+	color: rgba(0,0,0,.4);
+}
+.filter input[type=checkbox][disabled] + label:before, .filter input[type=radio][disabled] + label:before {
+	color: rgba(181,181,181,.3);
+}
+.filter input[type=checkbox] + label:before {
+    content: '\2610';
+}
+.filter input[type=checkbox]:checked + label:before{
+	content: '\2611';
+}
+.filter input[type=radio] + label:before {
+    content: '\25cb';
+}
+.filter input[type=radio]:checked + label:before {
+	content: '\25cf';
+}
+.filter-submit {
+    height: 36px;
+    text-transform: uppercase;
+	margin-top: 75px;
+    width: 128px;
+    padding: 0 5px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background: transparent;
+    line-height: 18px;
 }
