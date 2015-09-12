@@ -576,3 +576,11 @@ legend {
     background: transparent;
     line-height: 18px;
 }
+.sort {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.sort li {
+    display: inline-block;
+}
