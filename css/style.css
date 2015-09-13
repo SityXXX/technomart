@@ -707,8 +707,8 @@ legend {
 	font-size: 17px;
 	line-height: 38px;
 	position: relative;
-	width: 122px;
-    padding: 0 25px 0 5px;
+	width: 90px;
+    padding: 0 25px;
 }
 .product-price:after {
 	border: 19px solid #fff;
