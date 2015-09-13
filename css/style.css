@@ -171,6 +171,7 @@ p {
 	display: block;
 	font-size: 24px;
 	line-height: 47px;
+    height: 42px;
 	padding: 0 5px;
 	text-align: center;
 	text-transform: uppercase;
@@ -360,6 +361,9 @@ p {
 	margin: 0 14px;
 	padding: 0 2px;
 	vertical-align: bottom;
+}
+.user-menu a {
+	text-decoration: underline;
 }
 .user-menu li:first-child {
 	list-style-type: none;
