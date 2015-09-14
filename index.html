@@ -88,103 +88,110 @@
                 </div>
 
                 <div class="row">
+
                     <div class="slider">
-                        <div class="slides-wrap">
-                            <div class="slide slide-1 visible">
-                                <img src="img/drill-slide.jpg" alt="Дрели" width="620" height="266">
-                                <div class="title">
-                                    <div class="slider-header">Дрели<span>Соседям на радость</span></div>
-                                </div>
+                        <input type="radio" name="slide" id="slide-1" checked>
+                        <input type="radio" name="slide" id="slide-2">
+                        <div class="indicators">
+                            <label for="slide-1"></label>
+                            <label for="slide-2"></label>
+                        </div>
+                        <div class="slides">
+                            <div class="slide">
+                                <img src="img/drill-slide.jpg" width="620" height="266" alt="Дрели">
+                                <div class="slide-title">Дрели<span>Соседям на радость!</span></div>
                                 <a href="#" class="btn">Открыть каталог</a>
                             </div>
-                             <div class="slide slide-2 invisible">
-                                <img src="img/perforators-slide.jpg" alt="Перфораторы" width="620" height="266">
-                                <div class="title">
-                                    <div class="slider-header">Перфораторы<span>Настоящие мужские игрушки</span></div>
-                                </div>
+                            <div class="slide">
+                                <img src="img/perforators-slide.jpg" width="620" height="266" alt="Перфораторы">
+                                <div class="slide-title">Перфораторы<span>Настоящие мужские игрушки</span></div>
                                 <a href="#" class="btn">Открыть каталог</a>
                             </div>
                         </div>
-                        <ul class="indicators">
-                            <li><a href="#" class="indicator"></a></li>
-                            <li><a href="#" class="indicator active"></a></li>
-                        </ul>
-                        <div class="controls">
-                            <a href="#" class="icon-left"></a>
-                            <a href="#" class="icon-right"></a>
-                        </div>
+                        <label for="slide-1" class="slider-control slide-left icon-left"></label>
+                        <label for="slide-2" class="slider-control slide-right icon-right"></label>
                     </div>
 
-                    <div class="tile discount-tile">
-                        <div class="tile-title">Скидки</div>
-                        <a href="#" class="btn-tile">На 350 товаров</a>
-                    </div>
 
-                    <div class="tile shipping-tile">
-                        <div class="tile-title">Доставка</div>
-                        <a href="#" class="btn-tile">Безплатно</a>
-                    </div>
+                <div class="tile discount-tile">
+                    <div class="tile-title">Скидки</div>
+                    <a href="#" class="btn-tile">На 350 товаров</a>
                 </div>
 
+                <div class="tile shipping-tile">
+                    <div class="tile-title">Доставка</div>
+                    <a href="#" class="btn-tile">Безплатно</a>
+                </div>
             </div>
+
+        </div>
 
             <section class="feature">
                 <div class="block-header feature-header">
+                    <a href="#" class="btn">Все популярные товары</a>
                     <h1>Популярные товары</h1>
-                    <a class="btn">Все популярные товары</a>
                 </div>
                 <div class="feature-content">
                     <div class="row product-row">
 
                         <article class="block product-block">
                             <div class="product-btn-group invisible">
-                                <a href="#" class="btn btn-buy">Купить</a>
-                                <a href="#" class="btn btn-add-bookmark">В закладки</a>
+                                <a href="#" class="btn-buy">Купить</a>
+                                <a href="#" class="btn-add-bookmark">В закладки</a>
                             </div>
-                            <div class="img-wrap">
+                            <div class="product-img-wrap">
                                 <img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
                             </div>
-                            <h1>Перфоратор BOSCH BFG 9000</h1>
-                            <span class="product-old-price">32500 р.</span>
-                            <span class="product-price">25500 р.</span>
+                            <div class="product-info">
+                                <h2>Перфоратор BOSCH BFG 9000</h2>
+                                <span class="product-old-price">32500 р.</span>
+                                <span class="product-price">25500 р.</span>
+                            </div>
                         </article>
 
                         <article class="block product-block">
                             <div class="product-btn-group invisible">
-                                <a href="#" class="btn btn-buy">Купить</a>
-                                <a href="#" class="btn btn-add-bookmark">В закладки</a>
+                                <a href="#" class="btn-buy">Купить</a>
+                                <a href="#" class="btn-add-bookmark">В закладки</a>
                             </div>
-                            <div class="img-wrap">
+                            <div class="product-img-wrap">
                                 <img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                             </div>
-                            <h1>Перфоратор BOSCH BFG 3000</h1>
-                            <span class="product-old-price">22500 р.</span>
-                            <span class="product-price">12500 р.</span>
+                            <div class="product-info">
+                                <h2>Перфоратор BOSCH BFG 3000</h2>
+                                <span class="product-old-price">22500 р.</span>
+                                <span class="product-price">12500 р.</span>
+                            </div>
                         </article>
 
                         <article class="block product-block">
                             <div class="product-btn-group invisible">
-                                <a href="#" class="btn btn-buy">Купить</a>
-                                <a href="#" class="btn btn-add-bookmark">В закладки</a>
+                                <a href="#" class="btn-buy">Купить</a>
+                                <a href="#" class="btn-add-bookmark">В закладки</a>
                             </div>
-                            <div class="img-wrap">
+                            <div class="product-img-wrap">
                                 <img src="img/bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                             </div>
-                            <h1>Перфоратор BOSCH BFG 6000</h1>
-                            <span class="product-old-price">30500 р.</span>
-                            <span class="product-price">25500 р.</span>
+                            <div class="product-info">
+                                <h2>Перфоратор BOSCH BFG 6000</h2>
+                                <span class="product-old-price">30500 р.</span>
+                                <span class="product-price">25500 р.</span>
+                            </div>
                         </article>
 
                         <article class="block product-block ribboned-new">
                             <div class="product-btn-group invisible">
-                                <a href="#" class="btn btn-buy">Купить</a>
-                                <a href="#" class="btn btn-add-bookmark">В закладки</a>
+                                <a href="#" class="btn-buy">Купить</a>
+                                <a href="#" class="btn-add-bookmark">В закладки</a>
                             </div>
-                            <div class="img-wrap">
+                            <div class="product-img-wrap">
                                 <img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                             </div>
-                            <h1>Перфоратор BOSCH BFG 2000</h1>
-                            <span class="product-price">12500 р.</span>
+                            <div class="product-info">
+                                <h2>Перфоратор BOSCH BFG 2000</h2>
+                                <span class="product-old-price"></span>
+                                <span class="product-price">12500 р.</span>
+                            </div>
                         </article>
 
                     </div>
@@ -193,24 +200,22 @@
 
             <section class="feature">
                 <div class="block-header feature-header">
+                    <a href="#" class="btn">Все производители</a>
                     <h1>Популярные производители</h1>
-                    <a class="btn">Все производители</a>
                 </div>
                 <div class="feature-content">
-                    <div class="row">
+                    <div class="row manufacture-row">
 
                         <div class="block manufacture-block">
-                            <a href="#">
-                                <div class="img-wrap">
-                                    <img src="img/bosch.jpg" width="126" height="37" alt="Bosh">
-                                </div>
-                            </a>
+                            <div class="manufacture-img-wrap">
+                                <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="Bosh"></a>
+                            </div>
                         </div>
 
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <div class="img-wrap">
+                                <div class="manufacture-img-wrap">
                                     <img src="img/makita.jpg" width="123" height="40" alt="Makita">
                                 </div>
                             </a>
@@ -218,7 +223,7 @@
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <div class="img-wrap">
+                                <div class="manufacture-img-wrap">
                                     <img src="img/dewalt.jpg" width="146" height="44" alt="DeWalt">
                                 </div>
                             </a>
@@ -226,17 +231,17 @@
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <div class="img-wrap">
+                                <div class="manufacture-img-wrap">
                                     <img src="img/interskol.jpg" width="200" height="88" alt="Интерскол">
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row manufacture-row">
                         <div class="block manufacture-block">
                             <a href="#">
-                                <div class="img-wrap">
+                                <div class="manufacture-img-wrap">
                                     <img src="img/hitachi.jpg" width="169" height="31" alt="Hitachi">
                                 </div>
                             </a>
@@ -244,7 +249,7 @@
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <div class="img-wrap">
+                                <div class="manufacture-img-wrap">
                                     <img src="img/lg.jpg" width="121" height="73" alt="LG">
                                 </div>
                             </a>
@@ -252,7 +257,7 @@
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <div class="img-wrap">
+                                <div class="manufacture-img-wrap">
                                     <img src="img/aeg.jpg" width="151" height="96" alt="AEG">
                                 </div>
                             </a>
@@ -260,7 +265,7 @@
 
                         <div class="block manufacture-block">
                             <a href="#">
-                                <div class="img-wrap">
+                                <div class="manufacture-img-wrap">
                                     <img src="img/metabo.jpg" width="204" height="69" alt="Metabo">
                                 </div>
                             </a>
