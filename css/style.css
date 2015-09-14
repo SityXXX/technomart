@@ -671,6 +671,7 @@ legend {
 	display: block;
 }
 .ribboned-new:after {
+    text-align: center;
 	background: #ee3643;
 	color: #fff;
 	content: 'new';
@@ -965,4 +966,120 @@ legend {
 }
 .page-footer .mail-us {
 	margin-right: 53px;
+}
+/* Promo */
+.promo {
+    margin-top: 59px;
+}
+.tile {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 175px;
+    margin: 0 20px 20px 0;
+    padding: 22px 100px 22px 25px;
+}
+.tile:last-child {
+    margin-right: 0;
+}
+.tile-title {
+    line-height: 30px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: none;
+    margin-bottom: 11px;
+}
+.btn-tile {
+    color: #fff;
+    text-align: center;
+    display: block;
+    border-radius: 3px;
+    width: 125px;
+    padding: 0 5px;
+    background-color: rgba(0,0,0,.1);
+    height: 38px;
+    line-height: 38px;
+}
+.btn-tile:hover {
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+}
+.btn-tile:active {
+    background-color: rgba(0,0,0,.3);
+    color: #fff;
+}
+.material-tile {
+    background: url('../img/tile-bucket.png') #f6b22d 80% 50% no-repeat;
+}
+.instrument-tile {
+    background: url('../img/tile-drill.png') #4aafde 87% 50% no-repeat;
+}
+.machine-tile {
+    background: url('../img/tile-tractor.png') #cc79d1 87% 50% no-repeat;
+}
+.discount-tile {
+    background: url('../img/tile-basket.png') #85d179 80% 50% no-repeat;
+}
+.shipping-tile {
+    background: url('../img/tile-bus.png') #f6b22d 87% 50% no-repeat;
+}
+.slider {
+    position: relative;
+    float: left;
+    width: 620px;
+    margin-right: 20px;
+}
+.slider ~ .tile {
+    margin-right: 0;
+}
+.slide .title {
+    font-size: 36px;
+    line-height: 48px;
+    color: #fff;
+    position: absolute;
+    left: 24px;
+    top: 21px;
+    font-weight: bold;
+}
+.title span {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    font-weight: normal;
+}
+.slide .btn {
+    position: absolute;
+    left: 24px;
+    bottom: 22px;
+}
+.indicators {
+    list-style-type: none;
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+}
+.indicators li {
+    float: left;
+}
+.indicators a {
+    font-size: 45px;
+    color: #000;
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.indicators .active {
+    background: #ee3643;
+}
+.controls {
+    position: absolute;
+    font-size: 45px;
 }
