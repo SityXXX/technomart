@@ -1145,7 +1145,7 @@ legend {
 .piano-slider input[type=radio] {
     display: none;
 }
-.piano-slider input + label {
+.piano-slider input + .piano-key {
     background: #32425c;
     color: #fff;
     display: block;
@@ -1160,13 +1160,13 @@ legend {
     border-bottom: 1px solid #293449;
     text-transform: none;
 }
-.piano-slider input:checked + label {
+.piano-slider input:checked + .piano-key {
     color: #32425c;
     background-color: #fff;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
-.piano-slider input:checked + label + .piano-slide {
+.piano-slider input:checked + .piano-key + .piano-slide {
     display: block;
 }
 .piano-slider .slide-wrap {
@@ -1181,4 +1181,12 @@ legend {
 }
 .piano-slider .credit {
     background: url('../img/credit-label.png') 100% 50% no-repeat;
+}
+.custom .about {
+	float: left;
+    width: 540px;
+}
+.custom .contacts {
+    float: right;
+    width: ;
 }
