@@ -22,15 +22,21 @@ h1, h2, h3, div.h1, div.h2, div.h3, p {
 	margin: 0;
 }
 h1, div.h1 {
+    text-transform: uppercase;
 	font-size: 30px;
     color: #32425c;
+    line-height: 36px;
 }
-.custom h1 {
+.category-about {
+	background: #f2f6f8;
+    padding: 62px 0 73px 0;
+    text-transform: none;
+}
+.category-about h1 {
 	color: #000;
     margin-bottom: 32px;
 }
 .product-block h2 {
-    font-family: "Cuprum";
 	color: #000;
 	font-size: 18px;
 	line-height: 22px;
@@ -39,6 +45,7 @@ h1, div.h1 {
 }
 p {
     font-family: "PT Sans";
+    line-height: 24px;
 }
 .invisible {
 	display: none;
@@ -128,6 +135,15 @@ p {
 	padding: 10px 5px;
 	text-align: center;
 	width: 210px;
+}
+.btn-sm {
+    width: 185px;
+}
+.btn-lg {
+    width: 240px;
+}
+.btn-hg {
+    width: 290px;
 }
 .btn:hover {
 	background: #ca2c37;
@@ -420,7 +436,7 @@ p {
 .block-header {
 	margin-bottom: 20px;
     line-height: 38px;
-    padding: 25px 24px 24px 30px;
+    padding: 27px 24px 26px 30px;
 }
 .inner-page-header {
 	background: #f2f6f8;
@@ -647,14 +663,12 @@ legend {
 	margin-right: 20px;
 	width: 220px;
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 .block:hover {
-	box-shadow: 10px 10px 35px 0 rgba(41,52,73,.5);
+	box-shadow: 0 0 35px 0 rgba(41,52,73,.5);
     outline: none;
-}
-.product-block {
-	overflow: hidden;
-	position: relative;
 }
 .product-block:hover img {
 	display: none;
@@ -733,16 +747,13 @@ legend {
     height: 143px;
     line-height: 143px;
 }
-.product-img-wrap img,  .manufacture-img-wrap img {
+.block img {
 	max-width: 100%;
     max-height: 100%;
     height: auto;
     width: auto;
     display: inline-block;
     vertical-align: middle;
-}
-.manufacture-img-wrap a {
-	display: block;
 }
 .btn-buy {
     text-align: left;
@@ -837,10 +848,6 @@ legend {
 }
 .inner-page-content {
 	margin-bottom: 60px;
-}
-.custom {
-	padding: 62px 0 73px 0;
-    background: #f2f6f8;
 }
 .custom p{
 	font-family: "PT Sans";
@@ -1084,7 +1091,6 @@ legend {
     position: absolute;
     left: 25px;
     bottom: 22px;
-    width: 195px;
 }
 .slide .slide-title {
 	position: absolute;
@@ -1142,6 +1148,16 @@ legend {
     padding-top: 40px;
     background: url('../img/slider-shadow.png') 0 0 no-repeat;
 }
+.piano-slide h2{
+	font-size: 36px;
+    line-height: 48px;
+    color: #32425c;
+    font-weight: normal;
+    margin-bottom: 27px;
+}
+.piano-slide p:last-of-type {
+	margin-bottom: 30px;
+}
 .piano-slider input[type=radio] {
     display: none;
 }
@@ -1160,6 +1176,9 @@ legend {
     border-bottom: 1px solid #293449;
     text-transform: none;
 }
+.piano-slider .piano-key:hover {
+	background-color: #293449;
+}
 .piano-slider input:checked + .piano-key {
     color: #32425c;
     background-color: #fff;
@@ -1171,7 +1190,7 @@ legend {
 }
 .piano-slider .slide-wrap {
     min-height: 282px;
-    padding-right: 240px;
+    padding-right: 242px;
 }
 .piano-slider .shipping {
     background: url('../img/delivery.png') 100% 50% no-repeat;
@@ -1182,11 +1201,44 @@ legend {
 .piano-slider .credit {
     background: url('../img/credit-label.png') 100% 50% no-repeat;
 }
-.custom .about {
+.service, .company {
+    text-transform: none;
+    padding: 65px 0 102px;
+}
+.service h1, .company h1{
+	color: #000;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.service {
+	background: #f2f6f8;
+}
+.service .section-header {
+	width: 400px;
+    margin-bottom: 38px;
+}
+.company .about {
 	float: left;
     width: 540px;
 }
-.custom .contacts {
+.company .contacts {
     float: right;
-    width: ;
+    width: 300px;
+}
+.about-list {
+    list-style-type: none;
+	font-size: 18px;
+    line-height: 20px;
+    padding: 0;
+    margin: 26px 0 40px 0;
+}
+.about-list li {
+	margin-bottom: 25px;
+    padding-left: 36px;
+}
+.about-list li:last-child {
+	margin-bottom: 0;
+}
+.about-list li {
+
 }
