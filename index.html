@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="user-block">
-                            <a href="#" class="logout icon-user icon-logout">Равшан Джамшут</a>
+                            <a href="#" class="logout icon-user icon-logout">Равшан Джамшутович</a>
                             <ul class="user-menu">
                                 <li><a href="#">Мои заказы</a></li>
                                 <li><a href="#">Личный кабинет</a></li>
@@ -274,41 +274,29 @@
                     </div>
                 </div>
             </section>
-
+        </div>
             <section class="custom service">
-
+            <div class="container">
                 <h1>Сервисы</h1>
                 <p>
                     Хороший интернет-магазин отличается от плохого не только ценами!
                     Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                 </p>
 
-                <div class="content">
-                    <input type="radio" name="piano" checked>
-                    <ul class="piano-slider">
-                        <li>
-                            <label>
-                                Доставка</label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="piano">Гарантия</label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="piano">Кредиты</label>
-                        </li>
-                    </ul>
-
-                    <div class="slide-wrap">
-                        <div class="slide shipping" id="shipping">
+                <div class="piano-slider">
+                    <input type="radio" id="piano-1" name="piano" checked><label for="piano-1">Доставка</label>
+                    <div class="piano-slide">
+                        <div class="slide-wrap shipping">
                             <h2>Доставка</h2>
                             <p>
                                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                                 Ведь мы неплохо заработаем, поднимая его на ваш на этаж!
                             </p>
                         </div>
-                        <div class="slide guarantee" id="guarantee">
+                    </div>
+                    <input type="radio" id="piano-2" name="piano"><label for="piano-2">Гарантия</label>
+                    <div class="piano-slide">
+                        <div class="slide-wrap guaranty">
                             <h2>Гарантии</h2>
                             <p>
                                 Если купленный у нас товар поломается или заискрит, а также в случае пожара,
@@ -316,7 +304,10 @@
                                 Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
                             </p>
                         </div>
-                        <div class="slide credit" id="credit">
+                    </div>
+                    <input type="radio" id="piano-3" name="piano"><label for="piano-3">Кредиты</label>
+                    <div class="piano-slide">
+                        <div class="slide-wrap credit">
                             <h2>Кредиты</h2>
                             <p>
                                 Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
@@ -324,11 +315,11 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
             </section>
 
             <div class="custom about-contact">
-
+            <div class="container">
                 <section class="about">
                     <h1>Компания "Техномарт"</h1>
                     <p>

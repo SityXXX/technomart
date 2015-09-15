@@ -1128,3 +1128,57 @@ legend {
 	float: right;
     clear: both;
 }
+.piano-slider {
+    position: relative;
+    padding-top: 40px;
+}
+.piano-slider .piano-slide {
+    width: 621px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    padding-left: 89px;
+    padding-top: 40px;
+    background: url('../img/slider-shadow.png') 0 0 no-repeat;
+}
+.piano-slider input[type=radio] {
+    display: none;
+}
+.piano-slider input + label {
+    background: #32425c;
+    color: #fff;
+    display: block;
+    width: 196px;
+    height: 59px;
+    font-size: 21px;
+    line-height: 59px;
+    padding:0 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
+    text-transform: none;
+}
+.piano-slider input:checked + label {
+    color: #32425c;
+    background-color: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.piano-slider input:checked + label + .piano-slide {
+    display: block;
+}
+.piano-slider .slide-wrap {
+    min-height: 282px;
+    padding-right: 240px;
+}
+.piano-slider .shipping {
+    background: url('../img/delivery.png') 100% 50% no-repeat;
+}
+.piano-slider .guaranty {
+    background: url('../img/guaranty-label.png') 100% 50% no-repeat;
+}
+.piano-slider .credit {
+    background: url('../img/credit-label.png') 100% 50% no-repeat;
+}
