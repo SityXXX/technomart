@@ -27,11 +27,6 @@ h1, div.h1 {
     color: #32425c;
     line-height: 36px;
 }
-.category-about {
-	background: #f2f6f8;
-    padding: 62px 0 73px 0;
-    text-transform: none;
-}
 .category-about h1 {
 	color: #000;
     margin-bottom: 32px;
@@ -46,6 +41,10 @@ h1, div.h1 {
 p {
     font-family: "PT Sans";
     line-height: 24px;
+    margin-bottom: 25px;
+}
+p span , address span {
+    display: block;
 }
 .invisible {
 	display: none;
@@ -62,17 +61,61 @@ p {
 	padding-right: 10px;
 	width: 940px;
 }
+/* clear ;-) */
 .row::after {
 	clear: both;
 	content: "";
 	display: table;
+}
+/* Inputs */
+input, textarea {
+    background-color: #fff;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    box-sizing: border-box;
+    line-height: 18px;
+    padding: 8px 14px;
+    font-family: "PT Sans";
+    font-size: 13px;
+    width: 100%;
+}
+textarea {
+    min-height: 112px;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+    text-overflow: ellipsis;
+}
+input::-moz-placeholder {
+    color: #999;
+    text-overflow: ellipsis;
+}
+input:-moz-placeholder {
+    color: #999;
+    text-overflow: ellipsis;
+}
+input:-ms-input-placeholder {
+	color: #999;
+    text-overflow: ellipsis;
+}
+input[placeholer] {
+    color: #999;
+    text-overflow: ellipsis;
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+label {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    display: block;
 }
 /* Modal */
 .modal {
 	background: #fff;
 	box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
 	z-index: 1;
-	height: 282px;
 	left: 50%;
 	margin-left: -310px;
 	margin-top: -141px;
@@ -82,6 +125,7 @@ p {
 	top: 50%;
 	webkit-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
 	width: 620px;
+    border-top: 7px solid #ee3643;
 }
 .modal .close {
 	background: url('../img/cross.png') 50% 50% no-repeat;
@@ -91,12 +135,8 @@ p {
 	top: 9px;
 	width: 22px;
 }
-.modal-header {
-	background: #ee3643;
-	min-height: 7px;
-}
 .modal-content {
-	padding-bottom: 50px;
+	padding-bottom: 37px;
 	padding-top: 47px;
 	position: relative;
 }
@@ -111,8 +151,7 @@ p {
 }
 .modal-content .product-added {
 	background: url('../img/product-in-cart.png') 0 50% no-repeat;
-	height: 66px;
-	line-height: 66px;
+	line-height: 80px;
 	padding-left: 99px;
 }
 .modal-footer .buttons {
@@ -123,6 +162,15 @@ p {
 }
 .modal-footer .buttons .btn:last-child {
 	margin-right: 0;
+}
+.modal .field-wrap {
+    width: 220px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 22px;
+}
+.modal .field-wrap:last-child {
+    margin-right: 0;
 }
 /* Type Button */
 .btn {
@@ -135,6 +183,15 @@ p {
 	padding: 10px 5px;
 	text-align: center;
 	width: 210px;
+    text-transform: uppercase;
+}
+input.btn {
+    border: none;
+    box-sizing: content-box;
+    font-family: "Cuprum";
+}
+input.btn:active, input.btn:focus {
+    outline: none;
 }
 .btn-sm {
     width: 185px;
@@ -211,6 +268,33 @@ p {
 	height: 42px;
 	padding: 0 0 0 49px;
 	width: 221px;
+    font-family: "Cuprum";
+    font-size: 17px;
+    border-radius: 0;
+}
+.main-search::-webkit-input-placeholder {
+    color: #fff;
+}
+.main-search::-moz-placeholder {
+    color: #fff;
+}
+.main-search:-moz-placeholder {
+    color: #fff;
+}
+.main-search:-ms-input-placeholder {
+	color: #fff;
+}
+.main-search:focus::-webkit-input-placeholder {
+    color: #000;
+}
+.main-search:focus::-moz-placeholder {
+    color: #000;
+}
+.main-search:focus:-moz-placeholder {
+    color: #000;
+}
+.main-search:focus:-ms-placeholder {
+    color: #000;
 }
 .header-top-row  .main-search:hover {
 	background: #212a3a;
@@ -219,9 +303,6 @@ p {
 	background: #fff;
 	color: #000;
 	outline: none;
-}
-.main-search::-webkit-input-placeholder {
-	color: #fff;
 }
 .main-search + label:before {
 	left: 17px;
@@ -295,8 +376,8 @@ p {
 	font-style: italic;
 	line-height: 23px;
 	padding-left: 53px;
-	padding-top: 4px;
 	width: 267px;
+    margin: 0;
 }
 .phone {
     font-family: "Cuprum";
@@ -305,7 +386,7 @@ p {
 	font-size: 21px;
 	height: 39px;
 	line-height: 39px;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	padding-left: 71px;
 	position: relative;
 	width: 193px;
@@ -323,6 +404,19 @@ p {
 	font-size: 14px;
 	line-height: 14px;
 	text-align: center;
+    margin: 0;
+}
+address {
+    font-style: normal;
+}
+.page-header address {
+    text-align: center;
+    color: #32425c;
+    font-size: 14px;
+    line-height: 18px;
+}
+.page-footer address {
+    line-height: 24px;
 }
 .user-block {
 	width: 300px;
@@ -560,6 +654,7 @@ legend {
 	cursor: pointer;
 	padding-left: 35px;
 	position: relative;
+    margin: 0;
 }
 .filter label:before {
 	color: #c1c1c1;
@@ -651,6 +746,10 @@ legend {
 .sort-by a:hover {
 	border-bottom: 1px solid #ee3643;
 }
+/* Product */
+.popular {
+    margin-bottom: 85px;
+}
 .product-row, .manufacture-row {
 	margin-bottom: 20px;
 }
@@ -658,10 +757,10 @@ legend {
 	margin-right: 0;
 }
 .block {
-    outline: 1px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
 	float: left;
 	margin-right: 20px;
-	width: 220px;
+	width: 218px;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -804,6 +903,11 @@ legend {
 .main-content {
 	margin-bottom: 52px;
 }
+.category-about {
+	background: #f2f6f8;
+    padding: 62px 0 40px 0;
+    text-transform: none;
+}
 /* Pagination */
 .pagination ul {
 	margin: 0;
@@ -855,6 +959,7 @@ legend {
 }
 /* Footer */
 .page-footer {
+    color: #fff;
 	text-transform: none;
 }
 .page-footer .logo a {
@@ -864,6 +969,7 @@ legend {
     margin-top: -42px;
 }
 .footer-top-row {
+    font-size: 18px;
 	background: #32425c;
     padding: 42px 0 52px;
 }
@@ -917,6 +1023,7 @@ legend {
 }
 /* Bottom row */
 .footer-bot-row {
+    font-size: 16px;
 	background: #293449;
     color: #fff;
     padding: 35px 0 29px;
@@ -927,7 +1034,6 @@ legend {
 .page-footer .copyright {
 	margin-right: 150px;
     line-height: 18px;
-    font-size: 16px;
 }
 .copyright span {
 	display: block;
@@ -1076,7 +1182,7 @@ legend {
     background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }
 .slider input:nth-child(1):checked ~ .indicators label:nth-child(1) {
     background-color: #ee3643;
@@ -1130,7 +1236,7 @@ legend {
 .feature-header {
 	background-color: #f7f3ec;
 }
-.block-header .btn{
+.block-header .btn {
 	float: right;
     clear: both;
 }
@@ -1145,7 +1251,7 @@ legend {
     top: 0;
     display: none;
     padding-left: 89px;
-    padding-top: 40px;
+    padding-top: 35px;
     background: url('../img/slider-shadow.png') 0 0 no-repeat;
 }
 .piano-slide h2{
@@ -1153,10 +1259,7 @@ legend {
     line-height: 48px;
     color: #32425c;
     font-weight: normal;
-    margin-bottom: 27px;
-}
-.piano-slide p:last-of-type {
-	margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .piano-slider input[type=radio] {
     display: none;
@@ -1175,6 +1278,7 @@ legend {
     border-top: 1px solid #405069;
     border-bottom: 1px solid #293449;
     text-transform: none;
+    margin: 0;
 }
 .piano-slider .piano-key:hover {
 	background-color: #293449;
@@ -1189,17 +1293,21 @@ legend {
     display: block;
 }
 .piano-slider .slide-wrap {
-    min-height: 282px;
+    min-height: 295px;
     padding-right: 242px;
 }
+.piano-slider .slide-wrap {
+    background-position: 100% 5px;
+    background-repeat: no-repeat;
+}
 .piano-slider .shipping {
-    background: url('../img/delivery.png') 100% 50% no-repeat;
+    background-image: url('../img/delivery.png');
 }
 .piano-slider .guaranty {
-    background: url('../img/guaranty-label.png') 100% 50% no-repeat;
+    background-image: url('../img/guaranty-label.png');
 }
 .piano-slider .credit {
-    background: url('../img/credit-label.png') 100% 50% no-repeat;
+    background-image: url('../img/credit-label.png');
 }
 .service, .company {
     text-transform: none;
@@ -1215,7 +1323,9 @@ legend {
 }
 .service .section-header {
 	width: 400px;
-    margin-bottom: 38px;
+}
+.company {
+    position: relative;
 }
 .company .about {
 	float: left;
@@ -1230,15 +1340,27 @@ legend {
 	font-size: 18px;
     line-height: 20px;
     padding: 0;
-    margin: 26px 0 40px 0;
+    margin: 0 0 30px 0;
 }
 .about-list li {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
     padding-left: 36px;
+    position: relative;
 }
 .about-list li:last-child {
 	margin-bottom: 0;
 }
-.about-list li {
-
+.about-list li:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: #fb565a;
+    margin-top: -2px;
+}
+.map {
+    margin: 0 0 40px 0;
 }
