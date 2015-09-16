@@ -46,12 +46,6 @@ p {
 p span , address span {
     display: block;
 }
-.invisible {
-	display: none;
-}
-.visible {
-	display: block;
-}
 .table-row {
 	display: table-row;
 }
@@ -113,19 +107,24 @@ label {
 }
 /* Modal */
 .modal {
+    display: none;
 	background: #fff;
-	box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
 	z-index: 1;
 	left: 50%;
 	margin-left: -310px;
 	margin-top: -141px;
-	moz-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
-	o-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+    -webkit-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+	-moz-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+	-o-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+    box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
 	position: fixed;
 	top: 50%;
 	webkit-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
 	width: 620px;
     border-top: 7px solid #ee3643;
+}
+.visible {
+	display: block;
 }
 .modal .close {
 	background: url('../img/cross.png') 50% 50% no-repeat;
@@ -134,6 +133,7 @@ label {
 	right: 9px;
 	top: 9px;
 	width: 22px;
+    z-index: 1;
 }
 .modal-content {
 	padding-bottom: 37px;
@@ -154,7 +154,7 @@ label {
 	line-height: 80px;
 	padding-left: 99px;
 }
-.modal-footer .buttons {
+.buttons {
 	font-size: 0;
 }
 .modal-footer .btn {
@@ -217,6 +217,7 @@ input.btn:active, input.btn:focus {
 /* Header */
 .page-header {
 	text-transform: none;
+    margin-bottom: 23px;
 }
 .header-top-row {
     color: #fff;
@@ -226,7 +227,6 @@ input.btn:active, input.btn:focus {
 }
 .header-bot-row {
     background: #f1f5f7;
-	margin-bottom: 22px;
 	padding: 47px 0 60px;
 }
 .header-top-row  .top-panel {
@@ -418,46 +418,67 @@ address {
 .page-footer address {
     line-height: 24px;
 }
+/* User block */
 .user-block {
 	width: 300px;
 }
-.logout {
-	background: #fff;
-	color: #000;
-	display: block;
-	font-size: 21px;
+.usr-btns {
+    margin-bottom: 7px;
+    text-align: right;3
+}
+.usr-btn {
+    font-size: 21px;
 	height: 45px;
 	line-height: 45px;
-	margin-bottom: 7px;
-	overflow: hidden;
-	padding: 0 47px;
-	position: relative;
-	text-overflow: ellipsis;
+    background: #fff;
+	color: #000;
+	display: inline-block;
+    padding: 0 5px;
+    position: relative;
+    vertical-align: top;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    text-align: center;
 }
-.logout:hover {
+.usr-btns .iconed {
+    text-align: left;
+    padding-left: 45px;
+}
+.usr-acount {
+    width: 255px;
+}
+.usr-logout {
+	width: 45px;
+}
+.usr-login {
+    width: 121px;
+    margin-right: 10px;
+}
+.usr-register {
+    width: 150px;
+}
+.usr-btn:hover {
 	color: #000;
 }
-.logout:before, .logout:after {
+.usr-btn:before {
 	color: #c5c5c5;
 }
-.logout:before, .logout:after {
+.usr-btn:before {
 	font-size: 18px;
 	position: absolute;
 	top: 50%;
     margin-top: -9px;
 }
-.logout:before {
+.usr-btn:before {
 	left: 13px;
 }
-.logout:after {
-	right: 10px;
-}
-.logout:hover:before, .logout:hover:after {
+.usr-btn:hover:before{
 	color: #32425c;
 }
-.logout:active, .logout:active:before, .logout:active:after {
+.usr-btn:active, .usr-btn:active:before {
 	color: rgba(0,0,0,.3);
 }
+/* Menu */
 .user-menu {
 	color: #32425c;
 	font-size: 16px;
@@ -507,10 +528,14 @@ address {
 .main-menu a:active {
 	color: rgba(255,255,255,.5);
 }
+.breadcrumbs {
+	min-height: 14px;
+    margin-bottom: 22px;
+}
 .breadcrumbs ul {
     font-family: "PT Sans";
 	list-style-type: none;
-	margin: 0 0 22px;
+	margin: 0;
 	padding: 0;
 }
 .breadcrumbs li {
@@ -1089,9 +1114,6 @@ legend {
 	margin-right: 53px;
 }
 /* Promo */
-.promo {
-    margin-top: 59px;
-}
 .tile {
     position: relative;
     overflow: hidden;
@@ -1207,7 +1229,7 @@ legend {
     line-height: 48px;
     font-weight: bold;
 }
-.slide-title span{
+.slide-title span {
     font-weight: normal;
 	font-size: 18px;
     display: block;
@@ -1363,4 +1385,13 @@ legend {
 }
 .map {
     margin: 0 0 40px 0;
+}
+.modal-map {
+	width: 960px;
+    height: 446px;
+    border: none;
+    margin-left: -480px;
+}
+.modal-map .close {
+	top: 45px;
 }

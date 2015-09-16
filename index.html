@@ -41,11 +41,10 @@
                         </div>
 
                         <div class="user-block">
-                            <a href="#" class="logout icon-user icon-logout">Равшан Джамшутович</a>
-                            <ul class="user-menu">
-                                <li><a href="#">Мои заказы</a></li>
-                                <li><a href="#">Личный кабинет</a></li>
-                            </ul>
+                            <div class="buttons usr-btns">
+                                <a href="#" class="usr-btn usr-login iconed icon-login">Войти</a>
+                                <a href="#" class="usr-btn usr-register">Регистрация</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +62,9 @@
             </div>
         </div>
     </header>
+    <nav class="breadcrumbs">
 
+    </nav>
     <div class="page-content">
         <div class="container">
 
@@ -333,7 +334,7 @@
                                 <li>Автотрейдинг</li>
                                 <li>ЖелДорЭкспедиция</li>
                             </ul>
-                            <a class="btn" href="#">Подробнее о компании</a>
+                            <a class="btn" href="#" id="btn-feedback">Подробнее о компании</a>
                         </section>
 
                         <section class="contacts">
@@ -345,20 +346,20 @@
                             <figure class="map">
                                 <a href=""><img src="img/map-sm.jpg" alt="Карта проезда"></a>
                             </figure>
-                            <a class="btn btn-hg" href="#">Заблудились? Напишите нам!</a>
+                            <a class="btn btn-hg btn" id="btn-map" href="#">Заблудились? Напишите нам!</a>
                         </section>
 
                         <!-- Карта -->
-                        <figure class="modal invisible">
+                        <figure class="modal modal-map" id="full-map">
                             <a href="#" class="close"></a>
-                            <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=z0X923Gw-82w.kQr1yHDZFOTw" width="960" height="446"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d499.64961401007196!2d30.32128774079206!3d59.93880493908809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1442423924245" width="960px" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </figure>
 
                         <!-- Форма обратной связи -->
-                        <div class="modal invisible">
+                        <div class="modal" id="feedback">
+                            <a href="#" class="close"></a>
                             <form action="/" method="post" enctype="application/x-www-form-urlencoded">
                                 <div class="modal-content">
-                                    <a href="#" class="close"></a>
                                     <div class="row">
                                         <div class="field-wrap">
                                             <label for="name">Ваше имя:</label>
@@ -440,6 +441,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/load.js"></script>
 </body>
 
 </html>

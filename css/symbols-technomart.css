@@ -59,7 +59,7 @@
 .icon-left-big:before { content: '\2190'; } /* '←' */
 .icon-right-big:before { content: '\2192'; } /* '→' */
 .icon-login:before { content: '\2386'; } /* '⎆' */
-.icon-logout:after { content: '\241b'; } /* '␛' */
+.icon-logout:before { content: '\241b'; } /* '␛' */
 .icon-up-dir:before { content: '\25b2'; } /* '▲' */
 .icon-down-dir:before { content: '\25bc'; } /* '▼' */
 .icon-circle:before { content: '\25cb'; } /* '○' */
