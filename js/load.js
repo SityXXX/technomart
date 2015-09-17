@@ -1,19 +1,16 @@
-/* Close btn */
-/*document.querySelectorAll('.close').forEach(function(element){
-    element.addEventListener('click', function(){
-        this.preventDefault();
-        var node = this.parentNode();
-        node.classList.remove('invisible');
-        node.classList.add('visible');
-    });
-});*/
+/* Close btn and cancel */
 var btnClose = document.querySelectorAll('.close, .btn-cancel');
 for (var element in btnClose) {
-    if(btnClose.hasOwnProperty(element) && element!='length') {
+    if(btnClose.hasOwnProperty(element) && element != 'length') {
         btnClose[element].addEventListener('click', function(e){
+            while(var node = this.parentElement){
+                if(node.parentElement.classList.contains('modal')) {
+                    node.classList.add('invisible');
+                }
+            }
             e.preventDefault();
             modal = this.parentElement;
-            modal.classList.remove("visible");
+            modal.classList.remove('visible');
         });
 
     }

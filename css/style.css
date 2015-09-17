@@ -427,25 +427,25 @@ address {
     text-align: right;3
 }
 .usr-btn {
+    min-height: 45px;
     font-size: 21px;
-	height: 45px;
-	line-height: 45px;
+	line-height: 24px;
     background: #fff;
 	color: #000;
 	display: inline-block;
-    padding: 0 5px;
+    padding: 10px 5px;
     position: relative;
     vertical-align: top;
-    text-overflow: ellipsis;
     box-sizing: border-box;
     text-align: center;
-}
-.usr-btns .iconed {
-    text-align: left;
-    padding-left: 45px;
+    min-width: 45px;
 }
 .usr-acount {
-    width: 255px;
+    width: 250px;
+    padding-left: 45px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .usr-logout {
 	width: 45px;
@@ -453,6 +453,8 @@ address {
 .usr-login {
     width: 121px;
     margin-right: 10px;
+    padding-left: 45px;
+    text-align: left;
 }
 .usr-register {
     width: 150px;
@@ -1393,5 +1395,5 @@ legend {
     margin-left: -480px;
 }
 .modal-map .close {
-	top: 45px;
+	top: 45px
 }
