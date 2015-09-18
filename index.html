@@ -11,7 +11,18 @@
 </head>
 
 <body>
-
+    <div class="modal modal-in-cart">
+        <div class="modal-content">
+            <a href="#" class="close"></a>
+            <div class="h1 product-added">Товар добавлен в корзину</div>
+        </div>
+        <div class="modal-footer">
+            <div class="buttons">
+                <a class="btn" href="#">Оформить заказ</a>
+                <a class="btn btn-cancel" href="#">Продолжить покупки</a>
+            </div>
+        </div>
+    </div>
      <header class="page-header">
         <div class="header-top-row">
             <div class="container">
@@ -49,7 +60,7 @@
                     </div>
                 </div>
                 <nav class="main-menu">
-                    <ul class="row table-row">
+                    <ul class="row">
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Каталог</a></li>
@@ -357,9 +368,9 @@
 
                         <!-- Форма обратной связи -->
                         <div class="modal" id="feedback">
-                            <a href="#" class="close"></a>
                             <form action="/" method="post" enctype="application/x-www-form-urlencoded">
                                 <div class="modal-content">
+                                    <a href="#" class="close"></a>
                                     <div class="row">
                                         <div class="field-wrap">
                                             <label for="name">Ваше имя:</label>

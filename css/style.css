@@ -46,9 +46,6 @@ p {
 p span , address span {
     display: block;
 }
-.table-row {
-	display: table-row;
-}
 .container {
 	margin: 0 auto;
 	padding-left: 10px;
@@ -122,9 +119,7 @@ label {
 	webkit-box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
 	width: 620px;
     border-top: 7px solid #ee3643;
-}
-.visible {
-	display: block;
+    z-index: 2;
 }
 .modal .close {
 	background: url('../img/cross.png') 50% 50% no-repeat;
@@ -505,10 +500,11 @@ address {
 .main-menu {
 	display: table;
     width: 100%;
+    border-bottom: 5px solid #293449;
 }
 .main-menu ul {
+    display: table-row;
 	background: #32425c;
-	border-bottom: 5px solid #293449;
 	font-size: 17px;
 	list-style-type: none;
 	margin: 0;
@@ -1396,4 +1392,7 @@ legend {
 }
 .modal-map .close {
 	top: 45px
+}
+.visible {
+	display: block;
 }
