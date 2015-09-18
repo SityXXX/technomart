@@ -1,21 +1,36 @@
-/* Close btn and cancel */
-if(btnClose = document.querySelectorAll('.close, .btn-cancel')){
-    for (var element in btnClose) {
-        if(btnClose.hasOwnProperty(element) && element != 'length'){
-            parentElement = btnClose[element].parentElement;
-            while(true){
-                if(parentElement.classList.contains('modal')){
-                    break;
-                }
-                parentElement = parentElement.parentElement;
-            }
-            btnClose[element].addEventListener('click', function(e){
-                e.preventDefault();
-                parentElement.classList.remove('visible');
-            });
-        }
-
-    }
+/* Modal in-cart close */
+if(modalInCart = document.querySelector('.modal-in-cart')){
+    modalInCartClose = modalInCart.querySelector('.close');
+    modalInCartContinue = modalInCart.querySelector('.btn-cancel');
+    modalInCartClose.addEventListener('click', function(e){
+        e.preventDefault();
+        modalInCart.classList.remove('visible');
+    });
+    modalInCartContinue.addEventListener('click', function(e){
+        e.preventDefault();
+        modalInCart.classList.remove('visible');
+    });
+}
+/* Feedback close */
+if(feedback = document.getElementById('feedback')){
+    feedbackClose = feedback.querySelector('.close');
+    modalInCartCancel = feedback.querySelector('.btn-cancel');
+    feedbackClose.addEventListener('click', function(e){
+        e.preventDefault();
+        feedback.classList.remove('visible');
+    });
+    modalInCartCancel.addEventListener('click', function(e){
+        e.preventDefault();
+        feedback.classList.remove('visible');
+    });
+}
+/* Map close */
+if(fullMap = document.getElementById('full-map')){
+    fullMapClose = fullMap.querySelector('.close');
+    fullMapClose.addEventListener('click', function(e){
+        e.preventDefault();
+        fullMap.classList.remove('visible');
+    });
 }
 /* Button buy */
 if(btnBuy = document.querySelectorAll('.btn-buy')){
