@@ -45,7 +45,7 @@ if(btnBuy = document.querySelectorAll('.btn-buy')){
     }
 }
 /* Button map */
-if(btnMap = document.getElementById('btn-map')){
+if(btnMap = document.getElementById('small-map')){
     btnMap.addEventListener('click', function(e){
         e.preventDefault();
         document.getElementById('full-map').classList.add('visible');
