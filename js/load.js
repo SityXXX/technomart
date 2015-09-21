@@ -18,6 +18,7 @@ if(feedback = document.getElementById('feedback')){
     feedbackClose.addEventListener('click', function(e){
         e.preventDefault();
         feedback.classList.remove('visible');
+        feedback.classList.remove('modal-error');
     });
     modalInCartCancel.addEventListener('click', function(e){
         e.preventDefault();
@@ -56,5 +57,20 @@ if(btnFeedback = document.getElementById('btn-feedback')){
     btnFeedback.addEventListener('click', function(e){
         e.preventDefault();
         document.getElementById('feedback').classList.add('visible');
+        document.getElementById('feedback').querySelector('#name').focus();
     });
 }
+/* Feedback validation */
+var feedbackForm = document.querySelector('#feedback form');
+var feedbackName = document.querySelector('#feedback #name');
+var feedbackEmail = document.querySelector('#feedback #email');
+var feedbackMessage = document.querySelector('#feedback #message');
+
+feedbackForm.addEventListener('submit', function(e) {
+    if (feedbackName.value == '' || feedbackEmail.value == '' || feedbackMessage.value == '') {
+        e.preventDefault();
+        feedbackForm.parentElement.classList.remove("modal-error");
+        feedbackForm.parentElement.offsetWidth = feedbackForm.parentElement.offsetWidth;
+        feedbackForm.parentElement.classList.add("modal-error");
+    }
+});

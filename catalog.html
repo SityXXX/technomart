@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700%7CPT+Sans+Caption%7CCuprum:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Техномарт</title>
 </head>
 
@@ -162,20 +162,19 @@
                         <div class="filter-header">
                             <div class="row">
                                 <div class="sort-title">Сортировка:</div>
+                                <ul class="sort sort-direction">
+                                    <li class="active"><span class="icon icon-up-dir"></span></li>
+                                    <li><a href=""><span class="icon icon-down-dir"></span></a></li>
+                                </ul>
                                 <ul class="sort sort-by">
                                     <li class="active">По цене</li>
                                     <li><a href="#">По типу</a></li>
                                     <li><a href="#">По функционалу</a></li>
                                 </ul>
-                                <ul class="sort sort-direction">
-                                    <li class="active"><span class="icon icon-up-dir"></span></li>
-                                    <li><a href=""><span class="icon icon-down-dir"></span></a></li>
-                                </ul>
-
                             </div>
                         </div>
                         <main class="main-content">
-                            <div class="row product-row">
+                            <div class="blocks-wrap row">
                                 <article class="block product-block">
                                     <div class="product-btn-group invisible">
                                         <a href="#" class="btn-buy icon-basket">Купить</a>
@@ -219,8 +218,6 @@
                                     </div>
                                 </article>
 
-                            </div>
-                            <div class="row product-row">
                                 <article class="block product-block">
                                     <div class="product-btn-group invisible">
                                         <a href="#" class="btn-buy icon-basket">Купить</a>
@@ -265,9 +262,6 @@
                                         <span class="product-price">12500 р.</span>
                                     </div>
                                 </article>
-
-                            </div>
-                            <div class="row product-row">
 
                                 <article class="block product-block ribboned-new">
                                     <div class="product-btn-group invisible">
@@ -313,7 +307,6 @@
                                         <span class="product-price">12500 р.</span>
                                     </div>
                                 </article>
-
                             </div>
                         </main>
                         <nav class="pagination">
@@ -393,7 +386,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/load.js"></script>
+    <script src="js/load.min.js"></script>
 </body>
 
 </html>

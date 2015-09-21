@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700%7CPT+Sans+Caption%7CCuprum:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Техномарт</title>
 </head>
 
@@ -142,7 +142,7 @@
                         <h1>Популярные товары:</h1>
                     </div>
                     <div class="feature-content">
-                        <div class="row product-row">
+                       <div class="blocks-wrap row">
 
                             <article class="block product-block">
                                 <div class="product-btn-group invisible">
@@ -214,7 +214,8 @@
                         <h1>Популярные производители:</h1>
                     </div>
                     <div class="feature-content">
-                        <div class="row manufacture-row">
+                        <div class="blocks-wrap row">
+
                             <div class="block manufacture-block">
                                 <div class="manufacture-img-wrap">
                                     <a href="#">
@@ -247,9 +248,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row manufacture-row">
                             <div class="block manufacture-block">
                                 <div class="manufacture-img-wrap">
                                     <a href="#">
@@ -282,7 +281,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </section>
             </div>
         </div>
@@ -293,7 +291,7 @@
                     <p>Хороший интернет-магазин отличается от плохого не только ценами!Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                 </header>
                 <div class="piano-slider">
-                    <input type="radio" id="piano-1" name="piano" checked>
+                    <input type="radio" class="piano-check" id="piano-1" name="piano" checked>
                     <label class="piano-key" for="piano-1">Доставка</label>
                     <div class="piano-slide">
                         <div class="slide-wrap shipping">
@@ -304,7 +302,7 @@
                                 <span>поднимая его на ваш на этаж!</span></p>
                         </div>
                     </div>
-                    <input type="radio" id="piano-2" name="piano">
+                    <input type="radio" class="piano-check" id="piano-2" name="piano">
                     <label class="piano-key" for="piano-2">Гарантия</label>
                     <div class="piano-slide">
                         <div class="slide-wrap guaranty">
@@ -314,7 +312,7 @@
                                 <span>Дом уж восстановите как-нибудь сами.</span></p>
                         </div>
                     </div>
-                    <input type="radio" id="piano-3" name="piano">
+                    <input type="radio" class="piano-check" id="piano-3" name="piano">
                     <label class="piano-key" for="piano-3">Кредиты</label>
                     <div class="piano-slide">
                         <div class="slide-wrap credit">
@@ -367,17 +365,17 @@
 
                     <!-- Форма обратной связи -->
                     <div class="modal" id="feedback">
-                        <form action="/" method="post" enctype="application/x-www-form-urlencoded">
+                        <form action="/" method="post" enctype="application/x-www-form-urlencoded" class="feedback-form">
                             <div class="modal-content">
                                 <button class="close"></button>
                                 <div class="row">
                                     <div class="field-wrap">
                                         <label for="name">Ваше имя:</label>
-                                        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+                                        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
                                     </div>
                                     <div class="field-wrap">
                                         <label for="email">Ваш e-mail:</label>
-                                        <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+                                        <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
                                     </div>
                                 </div>
                                 <label for="message">Текст письма:</label>
@@ -453,7 +451,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/load.js"></script>
+    <script src="js/load.min.js"></script>
 </body>
 
 </html>
