@@ -10,6 +10,38 @@
 </head>
 
 <body>
+    <!-- Карта -->
+    <figure class="modal modal-map" id="full-map">
+        <button class="close"></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d499.64961401007196!2d30.32128774079206!3d59.93880493908809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1442423924245" class="interactive-map" allowfullscreen></iframe>
+    </figure>
+    <!-- Форма обратной связи -->
+    <div class="modal" id="feedback">
+        <form action="/" method="post" enctype="application/x-www-form-urlencoded" class="feedback-form">
+            <div class="modal-content">
+                <button class="close"></button>
+                <div class="row">
+                    <div class="field-wrap">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
+                    </div>
+                    <div class="field-wrap">
+                        <label for="email">Ваш e-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+                    </div>
+                </div>
+                <label for="message">Текст письма:</label>
+                <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            </div>
+            <div class="modal-footer">
+                <div class="buttons">
+                    <input class="btn" type="submit" name="sub" value="Отправить">
+                    <a class="btn btn-cancel" href="#">Отмена</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Конец формы -->
     <div class="modal modal-in-cart">
         <div class="modal-content">
             <button class="close"></button>
@@ -96,7 +128,6 @@
                         <a href="#" class="btn-tile">Для стройки</a>
                     </div>
                 </div>
-
                 <div class="row">
 
                     <div class="slider">
@@ -135,6 +166,7 @@
                 </div>
 
             </div>
+
             <div class="popular">
                 <section class="feature">
                     <div class="block-header feature-header">
@@ -142,7 +174,7 @@
                         <h1>Популярные товары:</h1>
                     </div>
                     <div class="feature-content">
-                       <div class="blocks-wrap row">
+                        <div class="blocks-wrap row">
 
                             <article class="block product-block">
                                 <div class="product-btn-group invisible">
@@ -207,7 +239,6 @@
                         </div>
                     </div>
                 </section>
-
                 <section class="feature">
                     <div class="block-header feature-header">
                         <a href="#" class="btn btn-lg">Все производители</a>
@@ -281,6 +312,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </section>
             </div>
         </div>
@@ -344,7 +376,6 @@
                         </ul>
                         <a class="btn" href="#">Подробнее о компании</a>
                     </section>
-
                     <section class="contacts">
                         <h1>Контакты</h1>
                         <p>
@@ -356,43 +387,10 @@
                         </figure>
                         <a class="btn btn-hg" href="#" id="btn-feedback">Заблудились? Напишите нам!</a>
                     </section>
-
-                    <!-- Карта -->
-                    <figure class="modal modal-map" id="full-map">
-                        <button class="close"></button>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d499.64961401007196!2d30.32128774079206!3d59.93880493908809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1442423924245" class="interactive-map" allowfullscreen></iframe>
-                    </figure>
-
-                    <!-- Форма обратной связи -->
-                    <div class="modal" id="feedback">
-                        <form action="/" method="post" enctype="application/x-www-form-urlencoded" class="feedback-form">
-                            <div class="modal-content">
-                                <button class="close"></button>
-                                <div class="row">
-                                    <div class="field-wrap">
-                                        <label for="name">Ваше имя:</label>
-                                        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
-                                    </div>
-                                    <div class="field-wrap">
-                                        <label for="email">Ваш e-mail:</label>
-                                        <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
-                                    </div>
-                                </div>
-                                <label for="message">Текст письма:</label>
-                                <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-                            </div>
-                            <div class="modal-footer">
-                                <div class="buttons">
-                                    <input class="btn" type="submit" name="sub" value="Отправить">
-                                    <a class="btn btn-cancel" href="#">Отмена</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- Конец формы -->
                 </div>
             </div>
         </div>
+
     </div>
     <footer class="page-footer">
         <div class="footer-top-row">

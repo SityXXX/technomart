@@ -937,11 +937,7 @@ address {
     border-radius: 3px;
     line-height: 23px;
     margin-bottom: 20px;
-    padding: 7px 17px 8px 19px;
-}
-
-.filter-header a {
-    line-height: 14px;
+    padding: 8px 17px 7px 19px;
 }
 
 fieldset {
@@ -1111,6 +1107,9 @@ legend {
     width: auto;
 }
 
+
+/* Sort */
+
 .sort {
     float: right;
     list-style-type: none;
@@ -1125,6 +1124,10 @@ legend {
 
 .sort li {
     display: inline-block;
+}
+
+.sort span {
+    display: block;
 }
 
 .sort .active {
@@ -1149,8 +1152,8 @@ legend {
     margin-right: 18px;
 }
 
-.sort .icon:before {
-    line-height: 14px;
+.sort-direction {
+    max-height: 15px;
 }
 
 .sort li:last-child .icon {
@@ -1159,7 +1162,6 @@ legend {
 
 .sort a {
     color: rgba(0, 0, 0, .3);
-    display: block;
 }
 
 .sort-by a {
@@ -1636,6 +1638,9 @@ legend {
     width: 175px;
     margin: 0 20px 20px 0;
     padding: 22px 100px 22px 25px;
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    background-size:
 }
 
 .tile:last-child {
@@ -1673,7 +1678,8 @@ legend {
 }
 
 .material-tile {
-    background: url('../img/tile-bucket.png') #f6b22d 80% 50% no-repeat;
+    background-color: #f6b22d;
+    background-position: 5px 5px;
 }
 
 .instrument-tile {
@@ -1847,7 +1853,7 @@ legend {
     width: 196px;
     font-size: 21px;
     line-height: 24px;
-    padding: 24px 22px 25px;
+    padding: 17px 22px 18px;
     font-weight: bold;
     cursor: pointer;
     border-top: 1px solid #405069;
